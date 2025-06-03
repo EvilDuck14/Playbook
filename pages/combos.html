@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Spider-Man Playbook</title>
+        <link rel="stylesheet", href="../styles/styles.css">
+        <link rel="stylesheet", href="../styles/combos-styles.css">
+        <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+        
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="The one-stop guide for Spider-Man combos and tech in Marvel Rivals">
+        <meta name="author" content="EvilDuck">
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=5, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="settings-spacer"></div>
+            <div class="header-main">
+                <h1>The Spider-Man Playbook</h1>
+                <div class="divider">&nbsp</div>
+                <a href="../index.html">HOME</a>
+                <div class="divider">&nbsp</div>
+                <a href="actions.html">ACTIONS</a>
+                <div class="divider">&nbsp</div>
+                <a href="tech.html">TECH</a>
+                <div class="divider current-page-divider">&nbsp</div>
+                <a href="combos.html" class="current-page">COMBOS</a>
+                <div class="divider current-page-divider">&nbsp</div>
+            </div>
+            <div class="spacer"></div>
+            <button class="settings-button" data-active="false" onclick="openSettingsPanel();"><img src="../images/settings.png"></button>
+        </header>
+        
+        <main>
+            <div class="dropdowns">
+
+            </div>
+            <div class="combo-grid">
+                <div class="combo-block">
+                    <h2 class="combo-name"></h2>
+                    <div class="spacer"></div>
+                    <p class="combo-actions"></p>
+                </div>
+            </div>
+        </main>
+
+        <div class="settings-panel">
+            <h2>Notation</h2>
+            <div class="settings-notation-grid">
+                <div></div>
+                <h3>Preview</h3>
+                <h3>Expanded</h3>
+                <h4>Full Notation</h4>
+                <div></div>
+                <input type="radio" name="expanded" data-notation="full" onclick="notationSelect(this);">
+                <h4>Shortened</h4>
+                <div></div>
+                <input type="radio" name="expanded" data-notation="short" onclick="notationSelect(this);">
+                <h4>Custom Names</h4>
+                <div></div>
+                <input type="radio" name="expanded" data-notation="custom" onclick="notationSelect(this);">
+                <h4>Single Letters</h4>
+                <input type="radio" name="condensed" data-notation="letters" onclick="notationSelect(this);">
+                <input type="radio" name="expanded" data-notation="letters" onclick="notationSelect(this);">
+                <h4>Icons</h4>
+                <input type="radio" name="condensed" data-notation="icons" onclick="notationSelect(this);">
+                <input type="radio" name="expanded" data-notation="icons" onclick="notationSelect(this);">
+                <!-- <h4>KBM</h4>
+                <input type="radio" name="condensed" data-notation="kbm" onclick="notationSelect(this);">
+                <input type="radio" name="expanded" data-notation="kbm" onclick="notationSelect(this);"> -->
+                <h4>XBox</h4>
+                <input type="radio" name="condensed" data-notation="xbox" onclick="notationSelect(this);">
+                <input type="radio" name="expanded" data-notation="xbox" onclick="notationSelect(this);">
+                <h4>PlayStation</h4>
+                <input type="radio" name="condensed" data-notation="ps" onclick="notationSelect(this);">
+                <input type="radio" name="expanded" data-notation="ps" onclick="notationSelect(this);">
+            </div>
+        </div>  
+    </body>
+
+    <script src="../scripts/preferences.js"></script>
+    <script src="../scripts/combos.js"></script>
+</html>

@@ -1,0 +1,183 @@
+h1, h2, h3, h4, a, p, button {
+    color: rgb(224, 224, 241);
+}
+
+h1, h2, h3, h4, a {
+    font-family: "", Impact, 'Arial Narrow Bold', sans-serif;
+    user-select: none;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(21, 19, 43);
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+}
+
+header {
+    margin: 0px;
+    padding: 2svh 2svw;
+    background-color: rgb(13, 12, 27);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-main {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-main>h1 {
+    font-size: 2.4svw;
+}
+
+.header-main>.divider {
+    display: inline;
+    min-width: 2px;
+    max-width: 0.15svw;
+    font-size: 1.8svw;
+    background-color: rgb(224, 224, 241);
+    user-select: none;
+}
+
+.header-main>a {
+    font-size: 1.6svw;
+    color: rgb(224, 224, 241);
+    border-style: none;
+    text-decoration: none;
+}
+
+.header-main>.current-page {
+    color: rgb(211, 210, 130);
+}
+
+.header-main>.current-page-divider {
+    background-color: rgb(211, 210, 130);
+}
+
+.header-main>a:hover {
+    color: rgb(247, 246, 200);
+}
+
+.header-main>a:active {
+    color: rgb(211, 210, 130);
+}
+
+.header-main>* {
+    margin: 0px 1svw;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.settings-spacer {
+    flex-grow: 1;
+    display: none;
+}
+
+.settings-button {
+    margin: -1svw 0px;
+    height: calc(1.5svw + 4svh);
+    width: calc(1.5svw + 4svh);
+    background-color: transparent;
+    border-style: none;
+    transition: scale 0.3s, transform 0.3s;
+}
+
+.settings-button:hover, .settings-button[data-active=true] {
+    scale: 1.2;
+    transform: rotate(45deg);
+}
+
+.settings-button>img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.settings-panel {
+    display: none;
+    position: fixed;
+    padding: 5svh 5svw;
+    align-self: center;
+    top: 50%;
+    bottom: 50%;
+    background-color: rgba(13, 12, 27, 0.98);
+    border-radius: max(2svw, 2svh);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-panel>h2 {
+    font-size: 4svh;
+    margin: 0px 0px 2svh 0px;
+}
+
+.settings-notation-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: min(1svw, 1svh);
+    column-gap: min(1svw, 1svh);
+}
+
+.settings-notation-grid>* {
+    align-content: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.settings-notation-grid>h3 {
+    font-size: 2svh;
+}
+
+.settings-notation-grid>h4 {
+    font-size: 2svh;
+    text-align: right;
+}
+
+@media(orientation: portrait) {
+
+    .header-main {
+        display: block;
+        text-align: center;
+    }
+
+    .header-main>h1 {
+        font-size: 5svw;
+    }
+
+    .header-main>.divider {
+        font-size: 3.2svw;
+    }
+
+    .header-main>a {
+        font-size: 3svw;
+    }
+
+    .settings-button {
+        margin: -1svw 0px;
+        height: calc(1.5svw + 4svh);
+        width: calc(1.5svw + 4svh);
+    }
+
+    .settings-spacer {
+        width: 5svw;
+        display: block;
+    }
+}

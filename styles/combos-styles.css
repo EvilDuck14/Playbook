@@ -1,0 +1,51 @@
+.combo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(18svw, 18svh), 1fr));
+    row-gap: min(2svw, 2svh);
+    column-gap: min(2svw, 2svh);
+    padding: min(2svw, 2svh);
+}
+
+.combo-block {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: min(1svw, 1svh);
+    padding: min(1svw, 1svh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    aspect-ratio: 1;
+    container-type: inline-size;
+    transition: background-color 0.3s;
+}
+
+.combo-block:hover {
+    background-color: rgba(247, 246, 200, 0.4);
+}
+
+.combo-block:hover>.combo-name {
+    color: rgb(247, 246, 200);
+}
+
+.combo-name {
+    margin: 0px;
+    font-size: 10cqw;
+    transition: color 0.3s;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.combo-actions {
+    font-size:  9cqw;
+    margin: min(1svw, 1svh) 0px;
+}
+
+.combo-actions>img {
+    height: 12.25cqw;
+    margin-bottom: -3.15cqw;
+    margin-top: 2cqw;
+    align-self: center;
+}
+
