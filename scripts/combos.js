@@ -192,8 +192,8 @@ const tech = [
 
 function populate() {
     let list;
-    if (window.location.pathname == "/pages/combos.html") list = combos;
-    else if (window.location.pathname == "/pages/tech.html") list = tech;
+    if (window.location.pathname.indexOf("combos.html") != -1) list = combos;
+    else if (window.location.pathname.indexOf("tech.html") != -1) list = tech;
     else return;
 
     document.querySelectorAll(".combo-block").forEach(element => {
