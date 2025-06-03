@@ -33,10 +33,6 @@
     transition: color 0.3s;
 }
 
-.spacer {
-    flex-grow: 1;
-}
-
 .combo-actions {
     font-size:  9cqw;
     margin: min(1svw, 1svh) 0px;
