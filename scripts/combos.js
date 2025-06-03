@@ -108,8 +108,8 @@ const combos = [
     {
         "name" : "Vortex",
         "actions" : "ustdGo"
-    },
-]
+    }
+];
 
 const tech = [
     {
@@ -188,7 +188,7 @@ const tech = [
         "name" : "U Turn",
         "actions" : "s"
     }
-]
+];
 
 function populate() {
     let list;
@@ -212,6 +212,6 @@ function populate() {
         newBlock.querySelector(".combo-actions").innerHTML = actionString;
 
     });
-}
+};
 
 populate();
