@@ -130,7 +130,7 @@ const combos = [ // tech uses the same name for code reuse
         "url" : ""
     },
     {
-        "name" : "Collision cancel",
+        "name" : "Collision Cancel",
         "actions" : "zo",
         "difficulty" : 0,
         "usefulness" : 0,

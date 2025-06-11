@@ -151,7 +151,27 @@ const combos = [
         "url" : ""
     },
     {
-        "name" : "Master Manipulator?",
+        "name" : "Overhead 1",
+        "actions" : "otustg",
+        "difficulty" : 0,
+        "usefulness" : 0,
+        "damage" : 0,
+        "time" : 0,
+        "description" : "Description incomplete.",
+        "url" : ""
+    },
+    {
+        "name" : "Overhead 2",
+        "actions" : "otstust",
+        "difficulty" : 0,
+        "usefulness" : 0,
+        "damage" : 0,
+        "time" : 0,
+        "description" : "Description incomplete.",
+        "url" : ""
+    },
+    {
+        "name" : "Master Manipulator",
         "actions" : "otsptu",
         "difficulty" : 0,
         "usefulness" : 0,
