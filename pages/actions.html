@@ -32,12 +32,12 @@
                 <div class="divider">&nbsp</div>
             </div>
             <div class="spacer"></div>
-            <button class="settings-button" data-active="false" onclick="openSettingsPanel();"><img src="../images/settings.png"></button>
+            <button class="settings-button" data-active="false"><img src="../images/settings.png"></button>
         </header>
         
         <main>
             <div class="action-grid">
-                <div class="action-block action-punch">
+                <div class="action-block action-punch" data-key="p">
                     <h2>Punch</h2>
                     <div class="action-content">
                         <img src="../images/icon-punch.png" class="action-icon">
@@ -46,11 +46,17 @@
                             <p><b>Range:</b> 3m</p>
                             <p><b>Strengths:</b> Procs tracers for large burst damage</p>
                             <p><b>Weaknesses:</b> Very short range, and requires tracers to do any meaningful damage</p>
-                            <p><b>Notation:</b> punch</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'p')">punch</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'p')">p</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-kick">
+                <div class="action-block action-kick" data-key="k">
                     <h2>Kick</h2>
                     <div class="action-content">
                         <img src="../images/icon-kick.png" class="action-icon">
@@ -59,11 +65,17 @@
                             <p><b>Range:</b> 4m</p>
                             <p><b>Strengths:</b> Increased range over Punch</p>
                             <p><b>Weaknesses:</b> Slower than punch, and the increased damgage over Punch hits virtually no new kill thresholds</p>
-                            <p><b>Notation:</b> kick</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'k')">kick</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'k')">k</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-overhead">
+                <div class="action-block action-overhead" data-key="o">
                     <h2>Overhead Slam</h2>
                     <div class="action-content">
                         <img src="../images/icon-overhead.png" class="action-icon">
@@ -72,11 +84,17 @@
                             <p><b>Range:</b> 4m</p>
                             <p><b>Strengths:</b> Very generous hitbox when up close, increased damage over Punch does hit new kill thresholds</p>
                             <p><b>Weaknesses:</b> Slowest startup in Spider-Man's kit, requires setup</p>
-                            <p><b>Notation:</b> overhead</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'o')">oh</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'o')">o</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-uppercut">
+                <div class="action-block action-uppercut" data-key="u">
                     <h2>Uppercut</h2>
                     <div class="action-content">
                         <img src="../images/icon-uppercut.png" class="action-icon">
@@ -85,11 +103,17 @@
                             <p><b>Range:</b> 4m</p>
                             <p><b>Strengths:</b> Can farm ult charge on multiple targets, knocks up, chains very naturally from Get Over Here Targetting</p>
                             <p><b>Weaknesses:</b> Reasonably long startup and movement which matches knock-up can enable retaliation</p>
-                            <p><b>Notation:</b> upper</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'u')">upper</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'u')">u</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-tracer">
+                <div class="action-block action-tracer" data-key="t">
                     <h2>Tracer</h2>
                     <div class="action-content">
                         <img src="../images/icon-tracer.png" class="action-icon">
@@ -98,11 +122,17 @@
                             <p><b>Range:</b> &infin; (50% falloff from 20-40m)</p>
                             <p><b>Strengths:</b> Can be ripped by melee attacks for 49.5 burst damage, useful for animation cancelling, and enables Get Over Here Targetting</p>
                             <p><b>Weaknesses:</b> Low individual damage, limited charges</p>
-                            <p><b>Notation:</b> tracer</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 't')">tracer</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 't')">t</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-swing">
+                <div class="action-block action-swing" data-key="s">
                     <h2>Web Swing</h2>
                     <div class="action-content">
                         <img src="../images/icon-swing.png" class="action-icon">
@@ -111,11 +141,17 @@
                             <p><b>Range:</b> 30m</p>
                             <p><b>Strengths:</b> Incredibly fast movement, grants Overhead Slam, refreshes Double Jump, animation cancels all non-swinging actions</p>
                             <p><b>Weaknesses:</b> Slower startup than other heroes' movement abilities, too valuable to be reckless with cooldowns</p>
-                            <p><b>Notation:</b> swing</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 's')">swing</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 's')">s</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-zip">
+                <div class="action-block action-zip" data-key="z">
                     <h2>Web Zip</h2>
                     <div class="action-content">
                         <img src="../images/icon-zip.png" class="action-icon">
@@ -124,11 +160,17 @@
                             <p><b>Range:</b> 30m</p>
                             <p><b>Strengths:</b> Grants directional speed very quickly</p>
                             <p><b>Weaknesses:</b> Gives less control & adaptability than a high swing</p>
-                            <p><b>Notation:</b> zip</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'z')">zip</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'z')">z</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-whiff">
+                <div class="action-block action-whiff" data-key="w">
                     <h2>Web Whiff</h2>
                     <div class="action-content">
                         <img src="../images/icon-whiff.png" class="action-icon">
@@ -137,11 +179,17 @@
                             <p><b>Range:</b> N/A</p>
                             <p><b>Strengths:</b> Delays the granting of Overhead Slam, making unique timings/preserves possible</p>
                             <p><b>Weaknesses:</b> Slow recovery into punches, doesn't refresh Double Jump</p>
-                            <p><b>Notation:</b> whiff</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'w')">whiff</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'w')">w</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-goh">
+                <div class="action-block action-goh" data-key="g">
                     <h2>Get Over Here</h2>
                     <div class="action-content">
                         <img src="../images/icon-goh.png" class="action-icon">
@@ -150,11 +198,17 @@
                             <p><b>Range:</b> 20m</p>
                             <p><b>Strengths:</b> Stuns and displaces target, closes distance to enable short ranged attacks</p>
                             <p><b>Weaknesses:</b> Requires precise aim, cooldown is easily wasted</p>
-                            <p><b>Notation:</b> goh</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'g')">goh</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'g')">g</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-goht">
+                <div class="action-block action-goht" data-key="G">
                     <h2>Get Over Here Targetting</h2>
                     <div class="action-content">
                         <img src="../images/icon-goht.png" class="action-icon">
@@ -163,11 +217,17 @@
                             <p><b>Range:</b> 20m</p>
                             <p><b>Strengths:</b> Very consistent for closing distance & bursting a marked target, slight knock-up cancels movement abilities</p>
                             <p><b>Weaknesses:</b> Easy to read and retaliate</p>
-                            <p><b>Notation:</b> goht</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'G')">goht</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'G')">G</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-jump">
+                <div class="action-block action-jump" data-key="j">
                     <h2>Jump</h2>
                     <div class="action-content">
                         <img src="../images/icon-jump.png" class="action-icon">
@@ -176,11 +236,17 @@
                             <p><b>Range:</b> N/A</p>
                             <p><b>Strengths:</b> Enables double jump/movement options and helps evasion</p>
                             <p><b>Weaknesses:</b> Reduces micro-manuverability for staying close to a target</p>
-                            <p><b>Notation:</b> jump</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'j')">jump</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'j')">j</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-dj">
+                <div class="action-block action-dj" data-key="d">
                     <h2>Double Jump</h2>
                     <div class="action-content">
                         <img src="../images/icon-dj.png" class="action-icon">
@@ -189,7 +255,13 @@
                             <p><b>Range:</b> N/A</p>
                             <p><b>Strengths:</b> Double jumping controls momentum & airtime, helps evasion, and grants an Overhead Slam</p>
                             <p><b>Weaknesses:</b> Often moves you out of range for Spider-Man's other actions</p>
-                            <p><b>Notation:</b> dj</p>
+                            <div class=action-notation>
+                                <p><b>Notation:&nbsp;</b></p>
+                                <p class="notation-full" onclick="editNotation('full', 'd')">dj</p>
+                                <p>&nbsp;(</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'd')">d</p>
+                                <p>)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,6 +280,9 @@
                 <h4>Shortened</h4>
                 <div></div>
                 <input type="radio" name="expanded" data-notation="short" onclick="notationSelect(this);">
+                <h4>Icegawd</h4>
+                <div></div>
+                <input type="radio" name="expanded" data-notation="icegawd" onclick="notationSelect(this);">
                 <h4>Custom Names</h4>
                 <div></div>
                 <input type="radio" name="expanded" data-notation="custom" onclick="notationSelect(this);">
@@ -217,9 +292,9 @@
                 <h4>Icons</h4>
                 <input type="radio" name="condensed" data-notation="icons" onclick="notationSelect(this);">
                 <input type="radio" name="expanded" data-notation="icons" onclick="notationSelect(this);">
-                <!-- <h4>KBM</h4>
+                <h4>KBM</h4>
                 <input type="radio" name="condensed" data-notation="kbm" onclick="notationSelect(this);">
-                <input type="radio" name="expanded" data-notation="kbm" onclick="notationSelect(this);"> -->
+                <input type="radio" name="expanded" data-notation="kbm" onclick="notationSelect(this);">
                 <h4>XBox</h4>
                 <input type="radio" name="condensed" data-notation="xbox" onclick="notationSelect(this);">
                 <input type="radio" name="expanded" data-notation="xbox" onclick="notationSelect(this);">
@@ -228,8 +303,117 @@
                 <input type="radio" name="expanded" data-notation="ps" onclick="notationSelect(this);">
             </div>
         </div>  
+
+        <div class="input-panel custom-panel">
+            <input type="text" class="custom-input" placeholder="custom" onkeydown="customKeyDown(event);">
+            <button onclick="confirmCustom();">Submit</button>
+        </div>
+
+        <div class="input-panel kbm-panel">
+            <img src="../images/kbm/keyboard_tilde_outline.png" onclick="confirmNotation(this);" style="left: 10%; top: 16%;">
+            <img src="../images/kbm/keyboard_1_outline.png" onclick="confirmNotation(this);" style="left: 16%; top: 16%;">
+            <img src="../images/kbm/keyboard_2_outline.png" onclick="confirmNotation(this);" style="left: 22%; top: 16%;">
+            <img src="../images/kbm/keyboard_3_outline.png" onclick="confirmNotation(this);" style="left: 28%; top: 16%;">
+            <img src="../images/kbm/keyboard_4_outline.png" onclick="confirmNotation(this);" style="left: 34%; top: 16%;">
+            <img src="../images/kbm/keyboard_5_outline.png" onclick="confirmNotation(this);" style="left: 40%; top: 16%;">
+            <img src="../images/kbm/keyboard_6_outline.png" onclick="confirmNotation(this);" style="left: 46%; top: 16%;">
+            <img src="../images/kbm/keyboard_7_outline.png" onclick="confirmNotation(this);" style="left: 52%; top: 16%;">
+            <img src="../images/kbm/keyboard_8_outline.png" onclick="confirmNotation(this);" style="left: 58%; top: 16%;">
+            <img src="../images/kbm/keyboard_9_outline.png" onclick="confirmNotation(this);" style="left: 64%; top: 16%;">
+            <img src="../images/kbm/keyboard_0_outline.png" onclick="confirmNotation(this);" style="left: 70%; top: 16%;">
+            <img src="../images/kbm/keyboard_minus_outline.png" onclick="confirmNotation(this);" style="left: 76%; top: 16%;">
+            <img src="../images/kbm/keyboard_plus_outline.png" onclick="confirmNotation(this);" style="left: 82%; top: 16%;">
+            <img src="../images/kbm/keyboard_backspace_outline.png" onclick="confirmNotation(this);" style="left: 88%; top: 16%;">
+            <img src="../images/kbm/keyboard_tab_outline.png" onclick="confirmNotation(this);" style="left: 12%; top: 27%;">
+            <img src="../images/kbm/keyboard_q_outline.png" onclick="confirmNotation(this);" style="left: 18%; top: 27%;">
+            <img src="../images/kbm/keyboard_w_outline.png" onclick="confirmNotation(this);" style="left: 24%; top: 27%;">
+            <img src="../images/kbm/keyboard_e_outline.png" onclick="confirmNotation(this);" style="left: 30%; top: 27%;">
+            <img src="../images/kbm/keyboard_r_outline.png" onclick="confirmNotation(this);" style="left: 36%; top: 27%;">
+            <img src="../images/kbm/keyboard_t_outline.png" onclick="confirmNotation(this);" style="left: 42%; top: 27%;">
+            <img src="../images/kbm/keyboard_y_outline.png" onclick="confirmNotation(this);" style="left: 48%; top: 27%;">
+            <img src="../images/kbm/keyboard_u_outline.png" onclick="confirmNotation(this);" style="left: 54%; top: 27%;">
+            <img src="../images/kbm/keyboard_i_outline.png" onclick="confirmNotation(this);" style="left: 60%; top: 27%;">
+            <img src="../images/kbm/keyboard_o_outline.png" onclick="confirmNotation(this);" style="left: 66%; top: 27%;">
+            <img src="../images/kbm/keyboard_p_outline.png" onclick="confirmNotation(this);" style="left: 72%; top: 27%;">
+            <img src="../images/kbm/keyboard_bracket_open_outline.png" onclick="confirmNotation(this);" style="left: 78%; top: 27%;">
+            <img src="../images/kbm/keyboard_bracket_close_outline.png" onclick="confirmNotation(this);" style="left: 84%; top: 27%;">
+            <img src="../images/kbm/keyboard_slash_back_outline.png" onclick="confirmNotation(this);" style="left: 90%; top: 27%;">
+            <img src="../images/kbm/keyboard_capslock_outline.png" onclick="confirmNotation(this);" style="left:14%; top: 38%;">
+            <img src="../images/kbm/keyboard_a_outline.png" onclick="confirmNotation(this);" style="left: 20%; top: 38%;">
+            <img src="../images/kbm/keyboard_s_outline.png" onclick="confirmNotation(this);" style="left: 26%; top: 38%;">
+            <img src="../images/kbm/keyboard_d_outline.png" onclick="confirmNotation(this);" style="left: 32%; top: 38%;">
+            <img src="../images/kbm/keyboard_f_outline.png" onclick="confirmNotation(this);" style="left: 38%; top: 38%;">
+            <img src="../images/kbm/keyboard_g_outline.png" onclick="confirmNotation(this);" style="left: 44%; top: 38%;">
+            <img src="../images/kbm/keyboard_h_outline.png" onclick="confirmNotation(this);" style="left: 50%; top: 38%;">
+            <img src="../images/kbm/keyboard_j_outline.png" onclick="confirmNotation(this);" style="left: 56%; top: 38%;">
+            <img src="../images/kbm/keyboard_k_outline.png" onclick="confirmNotation(this);" style="left: 62%; top: 38%;">
+            <img src="../images/kbm/keyboard_l_outline.png" onclick="confirmNotation(this);" style="left: 68%; top: 38%;">
+            <img src="../images/kbm/keyboard_colon_outline.png" onclick="confirmNotation(this);" style="left: 74%; top: 38%;">
+            <img src="../images/kbm/keyboard_quote_outline.png" onclick="confirmNotation(this);" style="left: 80%; top: 38%;">
+            <img src="../images/kbm/keyboard_enter_outline.png" onclick="confirmNotation(this);" style="left: 86%; top: 38%;">
+            <img src="../images/kbm/keyboard_shift_outline.png" onclick="confirmNotation(this);" style="left: 16%; top: 49%;">
+            <img src="../images/kbm/keyboard_z_outline.png" onclick="confirmNotation(this);" style="left: 22%; top: 49%;">
+            <img src="../images/kbm/keyboard_x_outline.png" onclick="confirmNotation(this);" style="left: 28%; top: 49%;">
+            <img src="../images/kbm/keyboard_c_outline.png" onclick="confirmNotation(this);" style="left: 34%; top: 49%;">
+            <img src="../images/kbm/keyboard_v_outline.png" onclick="confirmNotation(this);" style="left: 40%; top: 49%;">
+            <img src="../images/kbm/keyboard_b_outline.png" onclick="confirmNotation(this);" style="left: 46%; top: 49%;">
+            <img src="../images/kbm/keyboard_n_outline.png" onclick="confirmNotation(this);" style="left: 52%; top: 49%;">
+            <img src="../images/kbm/keyboard_m_outline.png" onclick="confirmNotation(this);" style="left: 58%; top: 49%;">
+            <img src="../images/kbm/keyboard_comma_outline.png" onclick="confirmNotation(this);" style="left: 64%; top: 49%;">
+            <img src="../images/kbm/keyboard_period_outline.png" onclick="confirmNotation(this);" style="left: 70%; top: 49%;">
+            <img src="../images/kbm/keyboard_question_outline.png" onclick="confirmNotation(this);" style="left: 76%; top: 49%;">
+            <img src="../images/kbm/keyboard_shift_outline.png" onclick="confirmNotation(this);" style="left: 82%; top: 49%;">
+            <img src="../images/kbm/keyboard_ctrl_outline.png" onclick="confirmNotation(this);" style="left: 12%; top: 60%;">
+            <img src="../images/kbm/keyboard_alt_outline.png" onclick="confirmNotation(this);" style="left: 24%; top: 60%;">
+            <img src="../images/kbm/keyboard_space_outline.png" onclick="confirmNotation(this);" style="left: 45%; top: 60%;">
+            <img src="../images/kbm/keyboard_alt_outline.png" onclick="confirmNotation(this);" style="left: 66%; top: 60%;">
+            <img src="../images/kbm/keyboard_function_outline.png" onclick="confirmNotation(this);" style="left: 72%; top: 60%;">
+            <img src="../images/kbm/mouse_left_outline.png" onclick="confirmNotation(this);" style="left: 25%; top: 78%;">
+            <img src="../images/kbm/mouse_right_outline.png" onclick="confirmNotation(this);" style="left: 31%; top: 78%;">
+            <img src="../images/kbm/mouse_scroll_outline.png" onclick="confirmNotation(this);" style="left: 41%; top: 78%;">
+            <img src="../images/kbm/mouse_scroll_up_outline.png" onclick="confirmNotation(this);" style="left: 47%; top: 78%;">
+            <img src="../images/kbm/mouse_scroll_down_outline.png" onclick="confirmNotation(this);" style="left: 53%; top: 78%;">
+            <img src="../images/kbm/mouse_scroll_vertical_outline.png" onclick="confirmNotation(this);" style="left: 59%; top: 78%;">
+            <img src="../images/kbm/mouse_4_outline.png" onclick="confirmNotation(this);" style="left: 69%; top: 78%;">
+            <img src="../images/kbm/mouse_5_outline.png" onclick="confirmNotation(this);" style="left: 75%; top: 78%;">
+        </div>
+
+        <div class="input-panel xbox-panel">
+            <img src="../images/xbox-lt.png" onclick="confirmNotation(this);" style="left: 30%; top: 15%;">
+            <img src="../images/xbox-rt.png" onclick="confirmNotation(this);" style="left: 70%; top: 15%;">
+            <img src="../images/xbox-lb.png" onclick="confirmNotation(this);" style="left: 30%; top: 26%;">
+            <img src="../images/xbox-rb.png" onclick="confirmNotation(this);" style="left: 70%; top: 26%;">
+            <img src="../images/xbox-l.png" onclick="confirmNotation(this);" style="left: 28%; top: 40%;">
+            <img src="../images/xbox-r.png" onclick="confirmNotation(this);" style="left: 58%; top: 70%;">
+            <img src="../images/xbox-y.png" onclick="confirmNotation(this);" style="left: 68%; top: 40%;">
+            <img src="../images/xbox-x.png" onclick="confirmNotation(this);" style="left: 63%; top: 51%;">
+            <img src="../images/xbox-b.png" onclick="confirmNotation(this);" style="left: 73%; top: 51%;">
+            <img src="../images/xbox-a.png" onclick="confirmNotation(this);" style="left: 68%; top: 62%;">
+            <img src="../images/xbox-up.png" onclick="confirmNotation(this);" style="left: 40%; top: 48%;">
+            <img src="../images/xbox-left.png" onclick="confirmNotation(this);" style="left: 35%; top: 59%;">
+            <img src="../images/xbox-right.png" onclick="confirmNotation(this);" style="left: 45%; top: 59%;">
+            <img src="../images/xbox-down.png" onclick="confirmNotation(this);" style="left: 40%; top: 70%;">
+        </div>
+
+        <div class="input-panel ps-panel">
+            <img src="../images/ps-l2.png" onclick="confirmNotation(this);" style="left: 30%; top: 15%;">
+            <img src="../images/ps-r2.png" onclick="confirmNotation(this);" style="left: 70%; top: 15%;">
+            <img src="../images/ps-l1.png" onclick="confirmNotation(this);" style="left: 30%; top: 26%;">
+            <img src="../images/ps-r1.png" onclick="confirmNotation(this);" style="left: 70%; top: 26%;">
+            <img src="../images/ps-l3.png" onclick="confirmNotation(this);" style="left: 42%; top: 70%;">
+            <img src="../images/ps-r3.png" onclick="confirmNotation(this);" style="left: 58%; top: 70%;">
+            <img src="../images/ps-triangle.png" onclick="confirmNotation(this);" style="left: 68%; top: 40%;">
+            <img src="../images/ps-square.png" onclick="confirmNotation(this);" style="left: 63%; top: 51%;">
+            <img src="../images/ps-circle.png" onclick="confirmNotation(this);" style="left: 73%; top: 51%;">
+            <img src="../images/ps-cross.png" onclick="confirmNotation(this);" style="left: 68%; top: 62%;">
+            <img src="../images/ps-up.png" onclick="confirmNotation(this);" style="left: 32%; top: 40%;">
+            <img src="../images/ps-left.png" onclick="confirmNotation(this);" style="left: 27%; top: 51%;">
+            <img src="../images/ps-right.png" onclick="confirmNotation(this);" style="left: 37%; top: 51%;">
+            <img src="../images/ps-down.png" onclick="confirmNotation(this);" style="left: 32%; top: 62%;">
+            <img src="../images/ps-touchpad.png" onclick="confirmNotation(this);" style="left: 50%; top: 40%;">
+        </div>
     </body>
 
     <script src="../scripts/preferences.js"></script>
-    <script src="../scripts/combos.js"></script>
+    <script src="../scripts/actions.js"></script>
 </html>

@@ -1,0 +1,42 @@
+main {
+    margin: 5svh 5svw;
+}
+
+main>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    row-gap: 2svh;
+    text-align: justify;
+}
+
+p {
+    display: contents;
+    font-size: min(2svh, 3svw);
+}
+
+iframe {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    aspect-ratio: 16/9;
+    width: 90%;
+}
+
+@media(orientation: portrait) {
+
+    main {
+        margin: 2svh 5svw;
+    }
+
+    main>div {
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}

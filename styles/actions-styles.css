@@ -38,6 +38,31 @@ h2 {
 .action-text>p {
     font-size: 0.75svw;
     margin: 0.5svh;
+    justify-content: center;
+}
+
+.action-notation {
+    container-type: size;
+    padding-bottom: 0.3svw;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0.5svh;
+    position: absolute;
+    min-height: 3svh;
+}
+
+.action-notation>p {
+    font-size: 0.75svw;
+    margin: 0px;
+    padding: 0.5svh 0px;
+    cursor: default;
+    text-wrap: nowrap;
+}
+
+.action-notation>p>img {
+    height: 1svw;
+    margin-bottom: -0.3svw;
+    align-self: center;
 }
 
 @media(orientation: portrait) {
@@ -62,6 +87,10 @@ h2 {
         font-size: 1.6svw;
     }
 
+    .action-notation>p {
+        font-size: 1.6svw;
+    }
+
     .action-uppercut {
         grid-row: 4;
     }
@@ -69,4 +98,70 @@ h2 {
     .action-tracer {
         grid-row: 3;
     }
+
+    .action-notation>p {
+        padding-bottom: 0.5svw;
+    }
+
+    .action-notation>p>img {
+        height: 1.8svw;
+        margin-bottom: -0.5svw;
+        align-self: center;
+    }
+}
+
+.input-panel {
+    display: none;
+    position: fixed;
+    padding: 5svh 5svw;
+    align-self: center;
+    top: 50%;
+    bottom: 50%;
+    background-color: rgba(13, 12, 27, 0.98);
+    border-radius: max(2svw, 2svh);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(80svw, 80svh);
+    height: min(40svw, 40svh);
+}
+
+.input-panel>img {
+    height: min(6svw, 6svh);
+    position: absolute;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.custom-panel {
+    max-height: 15svh
+}
+
+.custom-input {
+    font-size: min(3svh, 3svw);
+    margin: 2svh;
+    width: 80%;
+    padding: 0.5svh;
+}
+
+.custom-panel>button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-style: none;
+    font-size: min(3svh, 3svw);
+    padding: 1svh 1.5svw;
+    border-radius: 1svh;
+    transition: 0.1s;
+}
+
+.custom-panel>button:hover {
+    color: rgb(228, 227, 200);
+    background-color: rgba(228, 226, 200, 0.1);
+    scale: 1.1;
+}
+
+.custom-panel>button:active {
+    color: rgb(206, 205, 173);
+    background-color: rgba(204, 201, 161, 0.1);
+    scale: 1.05;
 }

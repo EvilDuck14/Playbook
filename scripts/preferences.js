@@ -34,7 +34,7 @@ let FULL_NAMES = {
 let SHORT_NAMES = {
     "p" : "punch",
     "k" : "kick",
-    "o" : "oh",
+    "o" : "overhead",
     "u" : "upper",
     "t" : "tracer",
     "s" : "swing",
@@ -76,13 +76,32 @@ let ICONS = {
     "d" : '<img src="../images/icon-dj.png">'
 };
 
+let ICEGAWD_NAMES = {
+    "(" : "(R.",
+    "p" : "M",
+    "k" : "M.c",
+    "o" : "Over",
+    "u" : "Upper",
+    "t" : "T",
+    "s" : "S",
+    "z" : "S.L",
+    "w" : "SW",
+    "g" : "Goh",
+    "G" : "Goh.T",
+    "j" : "J",
+    "d" : "d.J",
+    "x" : "SxT",
+    "h" : "S.H"
+}
+
 let CUSTOM_NAMES = {};
+let KBM_BINDS = {};
 let XBOX_BINDS = {};
 let PS_BINDS = {};
 
 
 function setCookies() {
-    document.cookie = "PREF_CONDENSED=icons; path=/";
+    document.cookie = "PREF_CONDENSED=kbm; path=/";
     document.cookie = "PREF_FULL=short; path=/";
 
     document.cookie = "CUSTOM_p=punch; path=/";
@@ -123,6 +142,19 @@ function setCookies() {
     document.cookie = 'PS_G=<img src="../images/ps-r1.png">; path=/';
     document.cookie = 'PS_j=<img src="../images/ps-cross.png">; path=/';
     document.cookie = 'PS_d=<img src="../images/ps-cross.png">; path=/';
+
+    document.cookie = 'KBM_p=<img src="../images/kbm/mouse_left_outline.png">; path=/';
+    document.cookie = 'KBM_k=<img src="../images/kbm/mouse_left_outline.png">; path=/';
+    document.cookie = 'KBM_o=<img src="../images/kbm/mouse_left_outline.png">; path=/';
+    document.cookie = 'KBM_u=<img src="../images/kbm/keyboard_f_outline.png">; path=/';
+    document.cookie = 'KBM_t=<img src="../images/kbm/mouse_right_outline.png">; path=/';
+    document.cookie = 'KBM_s=<img src="../images/kbm/keyboard_shift_outline.png">; path=/';
+    document.cookie = 'KBM_z=<img src="../images/kbm/keyboard_shift_outline.png">; path=/';
+    document.cookie = 'KBM_w=<img src="../images/kbm/keyboard_shift_outline.png">; path=/';
+    document.cookie = 'KBM_g=<img src="../images/kbm/keyboard_e_outline.png">; path=/';
+    document.cookie = 'KBM_G=<img src="../images/kbm/keyboard_e_outline.png">; path=/';
+    document.cookie = 'KBM_j=<img src="../images/kbm/keyboard_space_outline.png">; path=/';
+    document.cookie = 'KBM_d=<img src="../images/kbm/keyboard_space_outline.png">; path=/';
 }
 
 function readCookies() {
@@ -133,19 +165,24 @@ function readCookies() {
         if (element.indexOf("PREF_FULL") == 0) PREF_FULL = element.substring(element.indexOf("=") + 1);
 
         if (element.indexOf("CUSTOM") == 0) CUSTOM_NAMES[element[element.indexOf("_") + 1]] = element.substring(element.indexOf("=") + 1);
+        if (element.indexOf("KBM") == 0) KBM_BINDS[element[element.indexOf("_") + 1]] = element.substring(element.indexOf("=") + 1);
         if (element.indexOf("XBOX") == 0) XBOX_BINDS[element[element.indexOf("_") + 1]] = element.substring(element.indexOf("=") + 1);
         if (element.indexOf("PS") == 0) PS_BINDS[element[element.indexOf("_") + 1]] = element.substring(element.indexOf("=") + 1);
     });
 
     if (PREF_CONDENSED == "icons") KEY_CONDENSED = Object.assign({}, KEY_CONDENSED, ICONS);
     if (PREF_CONDENSED == "letters") KEY_CONDENSED = Object.assign({}, KEY_CONDENSED, LETTER_NAMES);
+    if (PREF_CONDENSED == "kbm") KEY_CONDENSED = Object.assign({}, KEY_CONDENSED, KBM_BINDS);
     if (PREF_CONDENSED == "xbox") KEY_CONDENSED = Object.assign({}, KEY_CONDENSED, XBOX_BINDS);
     if (PREF_CONDENSED == "ps") KEY_CONDENSED = Object.assign({}, KEY_CONDENSED, PS_BINDS);
 
     if (PREF_FULL == "full") KEY_FULL = Object.assign({}, KEY_FULL, FULL_NAMES);
     if (PREF_FULL == "short") KEY_FULL = Object.assign({}, KEY_FULL, SHORT_NAMES);
+    if (PREF_FULL == "icegawd") KEY_FULL = Object.assign({}, KEY_FULL, ICEGAWD_NAMES);
+    if (PREF_FULL == "custom") KEY_FULL = Object.assign({}, KEY_FULL, CUSTOM_NAMES);
     if (PREF_FULL == "icons") KEY_FULL = Object.assign({}, KEY_FULL, ICONS);
     if (PREF_FULL == "letters") KEY_FULL = Object.assign({}, KEY_FULL, LETTER_NAMES);
+    if (PREF_FULL == "kbm") KEY_FULL = Object.assign({}, KEY_FULL, KBM_BINDS);
     if (PREF_FULL == "xbox") KEY_FULL = Object.assign({}, KEY_FULL, XBOX_BINDS);
     if (PREF_FULL == "ps") KEY_FULL = Object.assign({}, KEY_FULL, PS_BINDS);
 
@@ -191,7 +228,7 @@ function notationSelect(obj) {
     }
 
     readCookies();
-    populate();
+    if (window.location.pathname.indexOf("index.html") == -1) populate();
 }
 
 readCookies();

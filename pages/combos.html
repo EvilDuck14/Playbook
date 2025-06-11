@@ -32,18 +32,38 @@
                 <div class="divider current-page-divider">&nbsp</div>
             </div>
             <div class="spacer"></div>
-            <button class="settings-button" data-active="false" onclick="openSettingsPanel();"><img src="../images/settings.png"></button>
+            <button class="settings-button" data-active="false"><img src="../images/settings.png"></button>
         </header>
         
         <main>
-            <div class="dropdowns">
-
-            </div>
             <div class="combo-grid">
-                <div class="combo-block">
+                <div class="combo-block" data-index="" data-active="false" onclick="changeInfo(this);">
                     <h2 class="combo-name"></h2>
+                    <hr>
+                    <div class="combo-ratings">
+                        <div class="combo-difficulty"><h4>1/5</h4></div>
+                        <div class="spacer"></div>
+                        <div class="combo-usefulness"><h4>1/5</h4></div>
+                    </div>
                     <div class="spacer"></div>
+                    <hr>
                     <p class="combo-actions"></p>
+                    <img src="" class="combo-image">
+                </div>
+                <div class="info-panel" data-active="false">
+                    <iframe src="" title="Tech/Combo Demo Video" allow="web-share" allowfullscreen></iframe>
+                    <div class="info-contents">
+                        <h2 class="info-name">BnB Tracers</h2>
+                        <hr>
+                        <p class="info-actions">tracer > goht > upper > swing > tracer > tracer</p>
+                        <div class="info-grid">
+                            <p class="info-damage"><b>Damage: </b>264</p>
+                            <p class="info-difficulty"><b>Difficulty: </b>1/5</p>
+                            <p class="info-time"><b>Time: </b>1.8s</p>
+                            <p class="info-usefulness"><b>Usefulness: </b>4/5</p>
+                        </div>
+                        <p class="info-description">This is the most simple and consistent attack you can make against a 250HP opponent.</p>
+                    </div>
                 </div>
             </div>
         </main>
@@ -60,6 +80,9 @@
                 <h4>Shortened</h4>
                 <div></div>
                 <input type="radio" name="expanded" data-notation="short" onclick="notationSelect(this);">
+                <h4>Icegawd</h4>
+                <div></div>
+                <input type="radio" name="expanded" data-notation="icegawd" onclick="notationSelect(this);">
                 <h4>Custom Names</h4>
                 <div></div>
                 <input type="radio" name="expanded" data-notation="custom" onclick="notationSelect(this);">
@@ -69,9 +92,9 @@
                 <h4>Icons</h4>
                 <input type="radio" name="condensed" data-notation="icons" onclick="notationSelect(this);">
                 <input type="radio" name="expanded" data-notation="icons" onclick="notationSelect(this);">
-                <!-- <h4>KBM</h4>
+                <h4>KBM</h4>
                 <input type="radio" name="condensed" data-notation="kbm" onclick="notationSelect(this);">
-                <input type="radio" name="expanded" data-notation="kbm" onclick="notationSelect(this);"> -->
+                <input type="radio" name="expanded" data-notation="kbm" onclick="notationSelect(this);">
                 <h4>XBox</h4>
                 <input type="radio" name="condensed" data-notation="xbox" onclick="notationSelect(this);">
                 <input type="radio" name="expanded" data-notation="xbox" onclick="notationSelect(this);">
@@ -83,5 +106,6 @@
     </body>
 
     <script src="../scripts/preferences.js"></script>
+    <script src="../scripts/combos-data.js"></script>
     <script src="../scripts/combos.js"></script>
 </html>

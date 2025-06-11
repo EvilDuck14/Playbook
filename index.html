@@ -3,6 +3,7 @@
     <head>
         <title>The Spider-Man Playbook</title>
         <link rel="stylesheet", href="styles/styles.css">
+        <link rel="stylesheet", href="styles/index.css">
         <link rel="icon" type="image/x-icon" href="https://evilduck14.github.io/Playbook/images/logo.ico">
         
         <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -35,7 +36,20 @@
         </header>
         
         <main>
-            <p>Home</p>
+            <div>
+                <div><p>
+                    Welcome to The Spider-Man Playbook! 
+                    Here, you'll find a catalogue and description of all known tech and the most viable/interesting combos.
+                    The playbook is customisable to suit your preferences, so if this is your first visit, you will likely find the video here on the homepage helpful.
+                </p></div>
+                <iframe src="https://www.youtube.com/embed/d5v0KE42isM" title="Website Tutorial" allow="web-share" allowfullscreen></iframe>
+                <div><p>
+                    This website draws inspiration from Icegawd's "The Amazing Spiderman Playbook" while aiming to make the information more accessible and digestible to broad audiences.
+                </p></div>
+                <div><p>
+                    If you're aware of any tech or combos which are not present here, and would like to see them added, please email them to <i>TheEvilDuck14@gmail.com</i> or direct message them to <i>evilduck_</i> on Discord.
+                </p></div>
+            </div>
         </main>
 
         <div class="settings-panel">
@@ -50,6 +64,9 @@
                 <h4>Shortened</h4>
                 <div></div>
                 <input type="radio" name="expanded" data-notation="short" onclick="notationSelect(this);">
+                <h4>Icegawd</h4>
+                <div></div>
+                <input type="radio" name="expanded" data-notation="icegawd" onclick="notationSelect(this);">
                 <h4>Custom Names</h4>
                 <div></div>
                 <input type="radio" name="expanded" data-notation="custom" onclick="notationSelect(this);">
@@ -59,9 +76,9 @@
                 <h4>Icons</h4>
                 <input type="radio" name="condensed" data-notation="icons" onclick="notationSelect(this);">
                 <input type="radio" name="expanded" data-notation="icons" onclick="notationSelect(this);">
-                <!-- <h4>KBM</h4>
+                <h4>KBM</h4>
                 <input type="radio" name="condensed" data-notation="kbm" onclick="notationSelect(this);">
-                <input type="radio" name="expanded" data-notation="kbm" onclick="notationSelect(this);"> -->
+                <input type="radio" name="expanded" data-notation="kbm" onclick="notationSelect(this);">
                 <h4>XBox</h4>
                 <input type="radio" name="condensed" data-notation="xbox" onclick="notationSelect(this);">
                 <input type="radio" name="expanded" data-notation="xbox" onclick="notationSelect(this);">
@@ -73,5 +90,4 @@
     </body>
 
     <script src="scripts/preferences.js"></script>
-    <script src="scripts/combos.js"></script>
 </html>
