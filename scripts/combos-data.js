@@ -151,7 +151,7 @@ const combos = [
         "url" : ""
     },
     {
-        "name" : "Overhead 1",
+        "name" : "Overhead Burst",
         "actions" : "otustg",
         "difficulty" : 0,
         "usefulness" : 0,
@@ -161,7 +161,7 @@ const combos = [
         "url" : ""
     },
     {
-        "name" : "Overhead 2",
+        "name" : "Overhead Mixup",
         "actions" : "otstust",
         "difficulty" : 0,
         "usefulness" : 0,
@@ -193,6 +193,16 @@ const combos = [
     {
         "name" : "Fantastic Killer",
         "actions" : "otgdstusto",
+        "difficulty" : 0,
+        "usefulness" : 0,
+        "damage" : 0,
+        "time" : 0,
+        "description" : "Description incomplete.",
+        "url" : ""
+    },
+    {
+        "name" : "Further Beyond",
+        "actions" : "otustotgtustotot",
         "difficulty" : 0,
         "usefulness" : 0,
         "damage" : 0,

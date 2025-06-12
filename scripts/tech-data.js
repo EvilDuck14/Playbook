@@ -188,5 +188,15 @@ const combos = [ // tech uses the same name for code reuse
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
+    },
+    {
+        "name" : "Web Vault",
+        "actions" : "s",
+        "difficulty" : 0,
+        "usefulness" : 0,
+        "damage" : 0,
+        "time" : 0,
+        "description" : "Description incomplete.",
+        "url" : ""
     }
 ];

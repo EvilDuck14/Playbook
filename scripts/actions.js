@@ -1,3 +1,6 @@
+const expireDate = new Date();
+expireDate.setTime(expireDate.getTime() + (365*24*60*60*1000)); // Cookies expire in 1 year
+
 const actionBlocks = document.querySelectorAll(".action-block");
 
 const customPanel = document.querySelector(".custom-panel");
@@ -65,16 +68,16 @@ function editNotation(length, key) {
 
 function confirmNotation(button) {
     if (currentPanel == customPanel);
-    if (currentPanel == kbmPanel) document.cookie = 'KBM_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/';
-    if (currentPanel == xboxPanel) document.cookie = 'XBOX_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/';
-    if (currentPanel == psPanel) document.cookie = 'PS_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/';
+    if (currentPanel == kbmPanel) document.cookie = 'KBM_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; expires' + expireDate;
+    if (currentPanel == xboxPanel) document.cookie = 'XBOX_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; expires' + expireDate;
+    if (currentPanel == psPanel) document.cookie = 'PS_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; expires' + expireDate;
     readCookies();
     populate();
     closePanel();
 }
 
 function confirmCustom() {
-    if (customInput.value != "") document.cookie = "CUSTOM_" + currentKey + "=" + customInput.value + "; path=/";
+    if (customInput.value != "") document.cookie = "CUSTOM_" + currentKey + "=" + customInput.value + "; path=/; expires" + expireDate;
     readCookies();
     populate();
     closePanel();
