@@ -68,16 +68,16 @@ function editNotation(length, key) {
 
 function confirmNotation(button) {
     if (currentPanel == customPanel);
-    if (currentPanel == kbmPanel) document.cookie = 'KBM_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; expires' + expireDate;
-    if (currentPanel == xboxPanel) document.cookie = 'XBOX_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; expires' + expireDate;
-    if (currentPanel == psPanel) document.cookie = 'PS_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; expires' + expireDate;
+    if (currentPanel == kbmPanel) document.cookie = 'KBM_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; SameSite=None; Secure; expires=' + expireDate;
+    if (currentPanel == xboxPanel) document.cookie = 'XBOX_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; SameSite=None; Secure; expires=' + expireDate;
+    if (currentPanel == psPanel) document.cookie = 'PS_' + currentKey + '=<img src="../' + button.src.substring(button.src.indexOf("images")) + '">; path=/; SameSite=None; Secure; expires=' + expireDate;
     readCookies();
     populate();
     closePanel();
 }
 
 function confirmCustom() {
-    if (customInput.value != "") document.cookie = "CUSTOM_" + currentKey + "=" + customInput.value + "; path=/; expires" + expireDate;
+    if (customInput.value != "") document.cookie = "CUSTOM_" + currentKey + "=" + customInput.value + "; path=/; SameSite=None; Secure; expires=" + expireDate;
     readCookies();
     populate();
     closePanel();
