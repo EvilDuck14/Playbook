@@ -2,9 +2,9 @@ const combos = [
     {
         "name" : "BnB Tracers",
         "actions" : "tGustt",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 1,
+        "usefulness" : 5,
+        "damage" : 264,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -12,9 +12,9 @@ const combos = [
     {
         "name" : "BnB Short Plink",
         "actions" : "tGuso",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 1,
+        "usefulness" : 3,
+        "damage" : 253,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -22,9 +22,9 @@ const combos = [
     {
         "name" : "BnB Long Plink",
         "actions" : "tGusto",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 2,
+        "usefulness" : 4,
+        "damage" : 335.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -32,8 +32,8 @@ const combos = [
     {
         "name" : "BnB Punch",
         "actions" : "tGupt",
-        "difficulty" : 0,
-        "usefulness" : 0,
+        "difficulty" : 1,
+        "usefulness" : 2,
         "damage" : 0,
         "time" : 0,
         "description" : "Description incomplete.",
@@ -42,8 +42,8 @@ const combos = [
     {
         "name" : "Reverse Panther",
         "actions" : "tGutp",
-        "difficulty" : 0,
-        "usefulness" : 0,
+        "difficulty" : 2,
+        "usefulness" : 1,
         "damage" : 0,
         "time" : 0,
         "description" : "Description incomplete.",
@@ -52,9 +52,9 @@ const combos = [
     {
         "name" : "BnB U3H",
         "actions" : "tGuwpp+o",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 1,
+        "usefulness" : 1,
+        "damage" : 258.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -62,9 +62,9 @@ const combos = [
     {
         "name" : "Weave Combo",
         "actions" : "tGstust",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 3,
+        "usefulness" : 3,
+        "damage" : 264,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -72,9 +72,9 @@ const combos = [
     {
         "name" : "Panther Combo",
         "actions" : "tGptu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 1,
+        "usefulness" : 3,
+        "damage" : 308,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -82,9 +82,9 @@ const combos = [
     {
         "name" : "Fast Panther",
         "actions" : "tGsptu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 2,
+        "usefulness" : 2,
+        "damage" : 308,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -93,9 +93,9 @@ const combos = [
     {
         "name" : "One Two",
         "actions" : "tptu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 2,
+        "usefulness" : 4,
+        "damage" : 253,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -103,9 +103,9 @@ const combos = [
     {
         "name" : "Overhead One Two",
         "actions" : "totu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 2,
+        "usefulness" : 4,
+        "damage" : 280.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -113,9 +113,9 @@ const combos = [
     {
         "name" : "Displace Combo",
         "actions" : "tgptu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 3,
+        "usefulness" : 5,
+        "damage" : 280.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -123,9 +123,9 @@ const combos = [
     {
         "name" : "Reverse Yo-Yo",
         "actions" : "tgdotu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 3,
+        "usefulness" : 4,
+        "damage" : 308,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -133,9 +133,9 @@ const combos = [
     {
         "name" : "Grip Kick Rip",
         "actions" : "(pp)tgktu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 3,
+        "usefulness" : 1,
+        "damage" : 297,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -143,9 +143,9 @@ const combos = [
     {
         "name" : "Fast FFAmestack",
         "actions" : "otG+u",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 4,
+        "usefulness" : 4,
+        "damage" : 253,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -153,19 +153,19 @@ const combos = [
     {
         "name" : "Overhead Burst",
         "actions" : "otustg",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 3,
+        "usefulness" : 4,
+        "damage" : 258.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
     },
     {
         "name" : "Overhead Mixup",
-        "actions" : "otstust",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "actions" : "ogstust",
+        "difficulty" : 3,
+        "usefulness" : 4,
+        "damage" : 258.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -173,9 +173,9 @@ const combos = [
     {
         "name" : "Master Manipulator",
         "actions" : "otsptu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 4,
+        "usefulness" : 2,
+        "damage" : 308,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -183,9 +183,9 @@ const combos = [
     {
         "name" : "Master Masher",
         "actions" : "otgdstu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 3,
+        "usefulness" : 3,
+        "damage" : 258.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -193,19 +193,19 @@ const combos = [
     {
         "name" : "Fantastic Killer",
         "actions" : "otgdstusto",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 3,
+        "usefulness" : 3,
+        "damage" : 396,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
     },
     {
         "name" : "Further Beyond",
-        "actions" : "otustotgtustotot",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "actions" : "otustotgtustodtot",
+        "difficulty" : 4,
+        "usefulness" : 2,
+        "damage" : 847,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -213,9 +213,9 @@ const combos = [
     {
         "name" : "Saporen FFAmestack",
         "actions" : "to+G+u",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 4,
+        "usefulness" : 3,
+        "damage" : 253,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -224,9 +224,9 @@ const combos = [
     {
         "name" : "Yo-Yo",
         "actions" : "gdstusto",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 4,
+        "usefulness" : 5,
+        "damage" : 308,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -234,9 +234,9 @@ const combos = [
     {
         "name" : "Botched Yo-Yo",
         "actions" : "dgstuodtotu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 4,
+        "usefulness" : 3,
+        "damage" : 506,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -244,19 +244,19 @@ const combos = [
     {
         "name" : "Agni Kai Yo-Yo",
         "actions" : "(o)gdtutp",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 4,
+        "usefulness" : 4,
+        "damage" : 280.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
     },
     {
         "name" : "Drop Yo-Yo",
-        "actions" : "(o)gtutp",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "actions" : "(o)gd(o)tptu",
+        "difficulty" : 5,
+        "usefulness" : 3,
+        "damage" : 280.5,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -265,19 +265,19 @@ const combos = [
     {
         "name" : "Driveby",
         "actions" : "ztutGu",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 4,
+        "usefulness" : 5,
+        "damage" : 341,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
     },
     {
         "name" : "Bald Slam",
-        "actions" : "tGuot",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "actions" : "ts+Guot",
+        "difficulty" : 2,
+        "usefulness" : 2,
+        "damage" : 286,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
@@ -285,9 +285,9 @@ const combos = [
     {
         "name" : "Vortex",
         "actions" : "ustdGo",
-        "difficulty" : 0,
-        "usefulness" : 0,
-        "damage" : 0,
+        "difficulty" : 2,
+        "usefulness" : 2,
+        "damage" : 253,
         "time" : 0,
         "description" : "Description incomplete.",
         "url" : ""
