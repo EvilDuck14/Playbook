@@ -6,7 +6,7 @@ const combos = [
         "usefulness" : 5,
         "damage" : 264,
         "time" : 0,
-        "description" : "Description incomplete.",
+        "description" : "The perfect blend of fast, reliable and easy, this is the first combo every player should learn. After the BnB lands, following up with tracers ensures that your target cannot leave your effective range. However, any meaningful extra health or healing can't realistically be kept up with by firing more tracers.",
         "url" : ""
     },
     {
