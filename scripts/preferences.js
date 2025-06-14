@@ -104,60 +104,60 @@ let PS_BINDS = {};
 
 
 function setCookies() {
-    document.cookie = "PREF_CONDENSED=kbm; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "PREF_FULL=short; path=/; SameSite=None; Secure; expires=" + expireDate;
+    document.cookie = "PREF_CONDENSED=kbm; path=/; expires=" + expireDate;
+    document.cookie = "PREF_FULL=short; path=/; expires=" + expireDate;
 
-    document.cookie = "CUSTOM_p=punch; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_k=kick; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_o=overhead; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_u=upper; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_t=tracer; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_s=swing; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_z=zip; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_w=whiff; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_g=goh; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_G=goht; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_j=jump; path=/; SameSite=None; Secure; expires=" + expireDate;
-    document.cookie = "CUSTOM_d=dj; path=/; SameSite=None; Secure; expires=" + expireDate;
+    document.cookie = "CUSTOM_p=punch; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_k=kick; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_o=overhead; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_u=upper; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_t=tracer; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_s=swing; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_z=zip; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_w=whiff; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_g=goh; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_G=goht; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_j=jump; path=/; expires=" + expireDate;
+    document.cookie = "CUSTOM_d=dj; path=/; expires=" + expireDate;
 
-    document.cookie = 'XBOX_p=<img src="../images/xbox-rt.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_k=<img src="../images/xbox-rt.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_o=<img src="../images/xbox-rt.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_u=<img src="../images/xbox-x.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_t=<img src="../images/xbox-lt.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_s=<img src="../images/xbox-lb.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_z=<img src="../images/xbox-lb.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_w=<img src="../images/xbox-lb.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_g=<img src="../images/xbox-rb.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_G=<img src="../images/xbox-rb.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_j=<img src="../images/xbox-a.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'XBOX_d=<img src="../images/xbox-a.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
+    document.cookie = 'XBOX_p=<img src="../images/xbox-rt.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_k=<img src="../images/xbox-rt.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_o=<img src="../images/xbox-rt.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_u=<img src="../images/xbox-x.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_t=<img src="../images/xbox-lt.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_s=<img src="../images/xbox-lb.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_z=<img src="../images/xbox-lb.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_w=<img src="../images/xbox-lb.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_g=<img src="../images/xbox-rb.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_G=<img src="../images/xbox-rb.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_j=<img src="../images/xbox-a.png">; path=/; expires=' + expireDate;
+    document.cookie = 'XBOX_d=<img src="../images/xbox-a.png">; path=/; expires=' + expireDate;
 
-    document.cookie = 'PS_p=<img src="../images/ps-r2.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_k=<img src="../images/ps-r2.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_o=<img src="../images/ps-r2.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_u=<img src="../images/ps-square.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_t=<img src="../images/ps-l2.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_s=<img src="../images/ps-l1.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_z=<img src="../images/ps-l1.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_w=<img src="../images/ps-l1.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_g=<img src="../images/ps-r1.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_G=<img src="../images/ps-r1.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_j=<img src="../images/ps-cross.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'PS_d=<img src="../images/ps-cross.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
+    document.cookie = 'PS_p=<img src="../images/ps-r2.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_k=<img src="../images/ps-r2.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_o=<img src="../images/ps-r2.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_u=<img src="../images/ps-square.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_t=<img src="../images/ps-l2.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_s=<img src="../images/ps-l1.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_z=<img src="../images/ps-l1.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_w=<img src="../images/ps-l1.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_g=<img src="../images/ps-r1.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_G=<img src="../images/ps-r1.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_j=<img src="../images/ps-cross.png">; path=/; expires=' + expireDate;
+    document.cookie = 'PS_d=<img src="../images/ps-cross.png">; path=/; expires=' + expireDate;
 
-    document.cookie = 'KBM_p=<img src="../images/kbm/mouse_left_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_k=<img src="../images/kbm/mouse_left_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_o=<img src="../images/kbm/mouse_left_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_u=<img src="../images/kbm/keyboard_f_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_t=<img src="../images/kbm/mouse_right_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_s=<img src="../images/kbm/keyboard_shift_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_z=<img src="../images/kbm/keyboard_shift_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_w=<img src="../images/kbm/keyboard_shift_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_g=<img src="../images/kbm/keyboard_e_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_G=<img src="../images/kbm/keyboard_e_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_j=<img src="../images/kbm/keyboard_space_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
-    document.cookie = 'KBM_d=<img src="../images/kbm/keyboard_space_outline.png">; path=/; SameSite=None; Secure; expires=' + expireDate;
+    document.cookie = 'KBM_p=<img src="../images/kbm/mouse_left_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_k=<img src="../images/kbm/mouse_left_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_o=<img src="../images/kbm/mouse_left_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_u=<img src="../images/kbm/keyboard_f_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_t=<img src="../images/kbm/mouse_right_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_s=<img src="../images/kbm/keyboard_shift_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_z=<img src="../images/kbm/keyboard_shift_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_w=<img src="../images/kbm/keyboard_shift_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_g=<img src="../images/kbm/keyboard_e_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_G=<img src="../images/kbm/keyboard_e_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_j=<img src="../images/kbm/keyboard_space_outline.png">; path=/; expires=' + expireDate;
+    document.cookie = 'KBM_d=<img src="../images/kbm/keyboard_space_outline.png">; path=/; expires=' + expireDate;
 }
 
 function readCookies() {
@@ -222,12 +222,12 @@ document.addEventListener("mouseup", (e) => {
 function notationSelect(obj) {
     if (obj.name == "condensed") {
         PREF_CONDENSED = obj.dataset.notation;
-        document.cookie = "PREF_CONDENSED=" + obj.dataset.notation + "; path=/; SameSite=None; Secure; expires=" + expireDate;
+        document.cookie = "PREF_CONDENSED=" + obj.dataset.notation + "; path=/; expires=" + expireDate;
     }
 
     else if (obj.name == "expanded") {
         PREF_FULL = obj.dataset.notation;
-        document.cookie = "PREF_FULL=" + obj.dataset.notation + "; path=/; SameSite=None; Secure; expires=" + expireDate;
+        document.cookie = "PREF_FULL=" + obj.dataset.notation + "; path=/; expires=" + expireDate;
     }
 
     readCookies();

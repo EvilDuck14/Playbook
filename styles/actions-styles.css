@@ -31,14 +31,21 @@ h2 {
 }
 
 .action-icon {
-    width: 9svw;
     height: 9svw;
+    aspect-ratio: 1;
+}
+
+.action-text {
+    align-self: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .action-text>p {
-    font-size: 0.75svw;
-    margin: 0.5svh;
-    justify-content: center;
+    font-size: min(0.75svw, 1.5svh);
+    margin: 0.3svh 0.5svh;
 }
 
 .action-notation {
@@ -46,15 +53,15 @@ h2 {
     padding-bottom: 0.3svw;
     display: flex;
     flex-direction: row;
-    margin: 0px 0.5svh;
-    position: absolute;
-    min-height: 3svh;
+    margin: 0px 0.3svh;
+    position: relative;
+    min-height: fit-content;
 }
 
 .action-notation>p {
-    font-size: 0.75svw;
+    font-size: min(0.75svw, 1.5svh);
     margin: 0px;
-    padding: 0.5svh 0px;
+    padding: 0.3svh 0px;
     cursor: default;
     text-wrap: nowrap;
 }
@@ -76,19 +83,29 @@ h2 {
         font-size: 3svw;
     }
 
+    .action-block {
+        position: relative;
+    }
+
     .action-icon {
         position:absolute;
         opacity: 0.2;
-        width: 25svw;
         height: 25svw;
+        max-height: 19svh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .action-text>p {
-        font-size: 1.6svw;
+        font-size: min(1.6svw, 1svh);
+        margin: 0.2svh 0.5svh;
     }
 
     .action-notation>p {
-        font-size: 1.6svw;
+        font-size: min(1.6svw, 1svh);
+        height: min-content;
+        margin: 0.2svh, 0px;
     }
 
     .action-uppercut {
@@ -97,16 +114,6 @@ h2 {
 
     .action-tracer {
         grid-row: 3;
-    }
-
-    .action-notation>p {
-        padding-bottom: 0.5svw;
-    }
-
-    .action-notation>p>img {
-        height: 1.8svw;
-        margin-bottom: -0.5svw;
-        align-self: center;
     }
 }
 
