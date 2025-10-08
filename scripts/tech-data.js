@@ -90,6 +90,16 @@ const combos = [ // tech uses the same name for code reuse
         "url" : ""
     },
     {
+        "name" : "Unique 2 Hit",
+        "actions" : "",
+        "difficulty" : 0,
+        "usefulness" : 0,
+        "damage" : 0,
+        "time" : 0,
+        "description" : "Description incomplete.",
+        "url" : ""
+    },
+    {
         "name" : "Overhead Preserve",
         "actions" : "(t)w+Go",
         "difficulty" : 0,
