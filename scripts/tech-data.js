@@ -20,6 +20,36 @@ const combos = [ // tech uses the same name for code reuse
         "url" : ""
     },
     {
+        "name" : "Short Plink",
+        "actions" : "so",
+        "difficulty" : 0,
+        "usefulness" : 0,
+        "damage" : 0,
+        "time" : 0,
+        "description" : "Description incomplete.",
+        "url" : ""
+    },
+    {
+        "name" : "Long Plink",
+        "actions" : "wto",
+        "difficulty" : 0,
+        "usefulness" : 0,
+        "damage" : 0,
+        "time" : 0,
+        "description" : "Description incomplete.",
+        "url" : ""
+    },
+    {
+        "name" : "Double Plink",
+        "actions" : "stao",
+        "difficulty" : 0,
+        "usefulness" : 0,
+        "damage" : 0,
+        "time" : 0,
+        "description" : "Description incomplete.",
+        "url" : ""
+    },
+    {
         "name" : "FFAmestack",
         "actions" : "(t)G+u",
         "difficulty" : 0,
@@ -41,7 +71,7 @@ const combos = [ // tech uses the same name for code reuse
     },
     {
         "name" : "Space Jam",
-        "actions" : "(t)u+s+G",
+        "actions" : "(t)u+w+G",
         "difficulty" : 0,
         "usefulness" : 0,
         "damage" : 0,
@@ -61,7 +91,7 @@ const combos = [ // tech uses the same name for code reuse
     },
     {
         "name" : "Overhead Preserve",
-        "actions" : "(t)s+Go",
+        "actions" : "(t)w+Go",
         "difficulty" : 0,
         "usefulness" : 0,
         "damage" : 0,
@@ -91,7 +121,7 @@ const combos = [ // tech uses the same name for code reuse
     },
     {
         "name" : "Momentum Pull",
-        "actions" : "ztdusg",
+        "actions" : "ztjuwg",
         "difficulty" : 0,
         "usefulness" : 0,
         "damage" : 0,
@@ -111,7 +141,7 @@ const combos = [ // tech uses the same name for code reuse
     },
     {
         "name" : "Sly Tech",
-        "actions" : "s+uo",
+        "actions" : "w+uo",
         "difficulty" : 0,
         "usefulness" : 0,
         "damage" : 0,
@@ -151,7 +181,7 @@ const combos = [ // tech uses the same name for code reuse
     },
     {
         "name" : "NStop",
-        "actions" : "d+u",
+        "actions" : "j+u",
         "difficulty" : 0,
         "usefulness" : 0,
         "damage" : 0,
@@ -161,7 +191,7 @@ const combos = [ // tech uses the same name for code reuse
     },
     {
         "name" : "Makatore Pull",
-        "actions" : "gdztju",
+        "actions" : "gjztju",
         "difficulty" : 0,
         "usefulness" : 0,
         "damage" : 0,
@@ -171,7 +201,7 @@ const combos = [ // tech uses the same name for code reuse
     },
     {
         "name" : "Double Overhead",
-        "actions" : "sdoo",
+        "actions" : "sjoo",
         "difficulty" : 0,
         "usefulness" : 0,
         "damage" : 0,

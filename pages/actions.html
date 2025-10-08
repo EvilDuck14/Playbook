@@ -132,8 +132,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-swing" data-key="s">
-                    <h2>Web Swing</h2>
+                <div class="action-block action-swing" data-key="s", data-key2="z">
+                    <h2>Web Swing / Web Zip</h2>
                     <div class="action-content">
                         <img src="../images/icon-swing.png" class="action-icon">
                         <div class="action-text">
@@ -144,27 +144,31 @@
                             <div class=action-notation>
                                 <p><b>Notation:&nbsp;</b></p>
                                 <p class="notation-full" onclick="editNotation('full', 's')">swing</p>
+                                <p>/</p>
+                                <p class="notation-full-2" onclick="editNotation('full', 'z')">zip</p>
                                 <p>&nbsp;(</p>
                                 <p class="notation-condensed" onclick="editNotation('condensed', 's')">s</p>
+                                <p>/</p>
+                                <p class="notation-condensed-2" onclick="editNotation('condensed', 'z')">z</p>
                                 <p>)</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-zip" data-key="z">
-                    <h2>Web Zip</h2>
+                <div class="action-block action-autoswing" data-key="a">
+                    <h2>Auto Swing</h2>
                     <div class="action-content">
-                        <img src="../images/icon-zip.png" class="action-icon">
+                        <img src="../images/icon-swing.png" class="action-icon">
                         <div class="action-text">
                             <p><b>Damage:</b> N/A</p>
-                            <p><b>Range:</b> 30m</p>
-                            <p><b>Strengths:</b> Grants directional speed very quickly</p>
-                            <p><b>Weaknesses:</b> Gives less control & adaptability than a high swing</p>
+                            <p><b>Range:</b> N/A</p>
+                            <p><b>Strengths:</b> Very fast animation cancels & allows movement without startup time</p>
+                            <p><b>Weaknesses:</b> Very expensive to use in combos, imprecise for movement</p>
                             <div class=action-notation>
                                 <p><b>Notation:&nbsp;</b></p>
-                                <p class="notation-full" onclick="editNotation('full', 'z')">zip</p>
+                                <p class="notation-full" onclick="editNotation('full', 'a')">autoswing</p>
                                 <p>&nbsp;(</p>
-                                <p class="notation-condensed" onclick="editNotation('condensed', 'z')">z</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'a')">a</p>
                                 <p>)</p>
                             </div>
                         </div>
@@ -234,8 +238,8 @@
                         <div class="action-text">
                             <p><b>Damage:</b> N/A</p>
                             <p><b>Range:</b> N/A</p>
-                            <p><b>Strengths:</b> Enables double jump/movement options and helps evasion</p>
-                            <p><b>Weaknesses:</b> Reduces micro-manuverability for staying close to a target</p>
+                            <p><b>Strengths:</b> Enables overhead slam and helps evasion</p>
+                            <p><b>Weaknesses:</b> Can move you out of range for Spider-Man's other actions</p>
                             <div class=action-notation>
                                 <p><b>Notation:&nbsp;</b></p>
                                 <p class="notation-full" onclick="editNotation('full', 'j')">jump</p>
@@ -246,20 +250,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="action-block action-dj" data-key="d">
-                    <h2>Double Jump</h2>
+                <div class="action-block action-burn" data-key="b">
+                    <h2>Burn Tracer</h2>
                     <div class="action-content">
-                        <img src="../images/icon-dj.png" class="action-icon">
+                        <img src="../images/icon-tracer.png" class="action-icon">
                         <div class="action-text">
-                            <p><b>Damage:</b> N/A</p>
-                            <p><b>Range:</b> N/A</p>
-                            <p><b>Strengths:</b> Double jumping controls momentum & airtime, helps evasion, and grants an Overhead Slam</p>
-                            <p><b>Weaknesses:</b> Often moves you out of range for Spider-Man's other actions</p>
+                            <p><b>Damage:</b> 30</p>
+                            <p><b>Range:</b> 8m</p>
+                            <p><b>Strengths:</b> Can be quickly weaved into combos to increase burst damage</p>
+                            <p><b>Weaknesses:</b> Pushes you away from your target, limiting follow-up options</p>
                             <div class=action-notation>
                                 <p><b>Notation:&nbsp;</b></p>
-                                <p class="notation-full" onclick="editNotation('full', 'd')">dj</p>
+                                <p class="notation-full" onclick="editNotation('full', 'b')">burn</p>
                                 <p>&nbsp;(</p>
-                                <p class="notation-condensed" onclick="editNotation('condensed', 'd')">d</p>
+                                <p class="notation-condensed" onclick="editNotation('condensed', 'b')">b</p>
                                 <p>)</p>
                             </div>
                         </div>

@@ -18,6 +18,16 @@ function populate() {
 
         fullNotationField.style.cursor = ["custom", "kbm", "xbox", "ps"].includes(PREF_FULL) ? "pointer" : "default";
         conensedNotationField.style.cursor = ["custom", "kbm", "xbox", "ps"].includes(PREF_CONDENSED) ? "pointer" : "default";
+
+        // swing/zip shared block
+        fullNotationField = actionBlock.querySelector(".notation-full-2");
+        conensedNotationField = actionBlock.querySelector(".notation-condensed-2");
+        if (fullNotationField != null) {
+            fullNotationField.innerHTML = KEY_FULL[actionBlock.dataset.key2];
+            conensedNotationField.innerHTML = KEY_CONDENSED[actionBlock.dataset.key2];
+            fullNotationField.style.cursor = ["custom", "kbm", "xbox", "ps"].includes(PREF_FULL) ? "pointer" : "default";
+            conensedNotationField.style.cursor = ["custom", "kbm", "xbox", "ps"].includes(PREF_CONDENSED) ? "pointer" : "default";
+        }
     });
 }
 

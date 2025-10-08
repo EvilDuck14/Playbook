@@ -1,7 +1,7 @@
 const combos = [
     {
         "name" : "BnB Tracers",
-        "actions" : "tGustt",
+        "actions" : "tGuwtt",
         "difficulty" : 1,
         "usefulness" : 5,
         "damage" : 264,
@@ -21,7 +21,7 @@ const combos = [
     },
     {
         "name" : "BnB Long Plink",
-        "actions" : "tGusto",
+        "actions" : "tGuwto",
         "difficulty" : 2,
         "usefulness" : 4,
         "damage" : 335.5,
@@ -61,7 +61,7 @@ const combos = [
     },
     {
         "name" : "Weave Combo",
-        "actions" : "tGstust",
+        "actions" : "tGwtuwt",
         "difficulty" : 3,
         "usefulness" : 3,
         "damage" : 264,
@@ -122,7 +122,7 @@ const combos = [
     },
     {
         "name" : "Reverse Yo-Yo",
-        "actions" : "tgdotu",
+        "actions" : "tgjotu",
         "difficulty" : 3,
         "usefulness" : 4,
         "damage" : 308,
@@ -152,7 +152,7 @@ const combos = [
     },
     {
         "name" : "Overhead Burst",
-        "actions" : "otustg",
+        "actions" : "otuwtg",
         "difficulty" : 3,
         "usefulness" : 4,
         "damage" : 258.5,
@@ -162,7 +162,7 @@ const combos = [
     },
     {
         "name" : "Overhead Mixup",
-        "actions" : "ogstust",
+        "actions" : "ogwtuwt",
         "difficulty" : 3,
         "usefulness" : 4,
         "damage" : 258.5,
@@ -182,7 +182,7 @@ const combos = [
     },
     {
         "name" : "Master Masher",
-        "actions" : "otgdstu",
+        "actions" : "otgjjwtu",
         "difficulty" : 3,
         "usefulness" : 3,
         "damage" : 258.5,
@@ -192,7 +192,7 @@ const combos = [
     },
     {
         "name" : "Fantastic Killer",
-        "actions" : "otgdstusto",
+        "actions" : "otgjjwtuwto",
         "difficulty" : 3,
         "usefulness" : 3,
         "damage" : 396,
@@ -202,7 +202,7 @@ const combos = [
     },
     {
         "name" : "Further Beyond",
-        "actions" : "otustotgtustodtot",
+        "actions" : "otuwtotgtuwtojjtot",
         "difficulty" : 4,
         "usefulness" : 2,
         "damage" : 847,
@@ -223,7 +223,7 @@ const combos = [
 
     {
         "name" : "Yo-Yo",
-        "actions" : "gdstusto",
+        "actions" : "gjwtuwto",
         "difficulty" : 4,
         "usefulness" : 5,
         "damage" : 308,
@@ -233,7 +233,7 @@ const combos = [
     },
     {
         "name" : "Botched Yo-Yo",
-        "actions" : "dgstuodtotu",
+        "actions" : "jgwtuojtotu",
         "difficulty" : 4,
         "usefulness" : 3,
         "damage" : 506,
@@ -243,7 +243,7 @@ const combos = [
     },
     {
         "name" : "Agni Kai Yo-Yo",
-        "actions" : "(o)gdtutp",
+        "actions" : "(o)gjtutp",
         "difficulty" : 4,
         "usefulness" : 4,
         "damage" : 280.5,
@@ -253,7 +253,7 @@ const combos = [
     },
     {
         "name" : "Drop Yo-Yo",
-        "actions" : "(o)gd(o)tptu",
+        "actions" : "(o)gj(o)tptu",
         "difficulty" : 5,
         "usefulness" : 3,
         "damage" : 280.5,
@@ -274,7 +274,7 @@ const combos = [
     },
     {
         "name" : "Bald Slam",
-        "actions" : "ts+Guot",
+        "actions" : "tw+Guot",
         "difficulty" : 2,
         "usefulness" : 2,
         "damage" : 286,
@@ -284,7 +284,7 @@ const combos = [
     },
     {
         "name" : "Vortex",
-        "actions" : "ustdGo",
+        "actions" : "uwtjGo",
         "difficulty" : 2,
         "usefulness" : 2,
         "damage" : 253,
